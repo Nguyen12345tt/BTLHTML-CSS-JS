@@ -1,0 +1,131 @@
+/* Định dạng chung */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    padding: 10px 0;
+}
+
+/* Đảm bảo thanh tìm kiếm trên desktop căn giữa */
+.search-form {
+    width: 50%;
+    max-width: 400px;
+}
+
+/* Ẩn thanh tìm kiếm trên mobile khi chưa mở menu */
+@media (max-width: 992px) {
+    .search-container {
+        display: block !important;
+    }
+}
+
+/* Banner */
+.banner {
+    background-color: #007bff;
+    padding: 50px 20px;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.card-body .d-flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body .add-to-cart, .card-body .buy-now {
+    width: 150px; /* Điều chỉnh chiều rộng nút */
+}
+
+.card-body .buy-now {
+    margin-top: 5px; /* Điều chỉnh khoảng cách giữa các nút */
+}
+
+/* Đoạn CSS bạn muốn thêm */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page, .next {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #f57224;
+}
+
+.page.active {
+    background-color: white;
+    color: #f57224;
+}
+
+.page {
+    background-color: #fce4d6;
+}
+
+.next {
+    background-color: white;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.phone-circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.other-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.other-info div {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.other-info img {
+    max-width: 50px;
+    margin-top: 10px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    height: 500px; /* Đặt chiều cao cố định cho hộp sản phẩm */
+}
+
+.product-item img {
+    object-fit: cover;
+    height: 300px; /* Đặt chiều cao cố định cho ảnh */
+}
+
+.product-item .product-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

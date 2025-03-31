@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Văn Phòng Phẩm - Cửa Hàng Trực Tuyến</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/lienhe.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#">Văn Phòng Phẩm</a>
+
+        <div class="d-none d-lg-flex flex-grow-1 justify-content-center">
+            <form class="d-flex search-form">
+                <input class="form-control me-2" type="search" id="search-input-lg" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                <button class="btn btn-light" type="submit">Tìm</button>
+            </form>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
+                <li class="nav-item"><a class="nav-link" href="lienhe.html">Liên Hệ</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        Giỏ Hàng (<span id="cart-count">0</span>)
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link me-3" href="login.html">Đăng Nhập</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Đăng Ký</a>
+                </li>
+            </ul>
+            
+            <div class="search-container mt-3 w-100 d-lg-none">
+                <form class="d-flex search-form">
+                    <input class="form-control me-2" type="search" id="search-input-mobile" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                    <button class="btn btn-light" type="submit">Tìm</button>
+                </form>
+            </div>
+
+        <p id="message"></p>
+
+        </div>
+    </div>
+</nav>
+
+<main>
+    <h1>Liên hệ với chúng tôi</h1>
+
+    <section>
+        <h2>Thông tin liên hệ</h2>
+        <p>
+            Địa chỉ: Thôn Sơn Đồng, xã Tiên Phương, huyện Chương Mỹ
+        </p>
+        <p>
+            Số điện thoại: 0378205173
+        </p>
+        <p>
+            Email: thanhnguyennguyen496@gmail.com
+        </p>
+        <p>
+            Giờ làm việc: 08h-21h
+        </p>
+    </section>
+
+    <section>
+        <h2>Gửi tin nhắn cho chúng tôi</h2>
+        <form action="/submit-contact-form" method="post">
+            <label for="name">Tên:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message">Tin nhắn:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+
+            <input type="submit" value="Gửi">
+        </form>
+    </section>
+</main>
+    
+    <footer class="text-center text-white bg-dark p-3">
+        <p>&copy; 2025 Văn Phòng Phẩm. Mọi quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

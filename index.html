@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Văn Phòng Phẩm - Cửa Hàng Trực Tuyến</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#">Văn Phòng Phẩm</a>
+
+        <div class="d-none d-lg-flex flex-grow-1 justify-content-center">
+            <form class="d-flex search-form">
+                <input class="form-control me-2" type="search" id="search-input-lg" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                <button class="btn btn-light" type="submit">Tìm</button>
+            </form>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
+                <li class="nav-item"><a class="nav-link" href="lienhe.html">Liên Hệ</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        Giỏ Hàng (<span id="cart-count">0</span>)
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link me-3" href="login.html">Đăng Nhập</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Đăng Ký</a>
+                </li>
+            </ul>
+            
+            <div class="search-container mt-3 w-100 d-lg-none">
+                <form class="d-flex search-form">
+                    <input class="form-control me-2" type="search" id="search-input-mobile" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                    <button class="btn btn-light" type="submit">Tìm</button>
+                </form>
+            </div>
+
+        <p id="message"></p>
+
+        </div>
+    </div>
+</nav>
+
+    <header class="banner text-center text-white">
+        <h1>Chào mừng đến với cửa hàng văn phòng phẩm</h1>
+        <p>Mua sắm tiện lợi - Giá cả hợp lý - Giao hàng tận nơi</p>
+        <a href="#" class="btn btn-light">Mua Ngay</a>
+    </header>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Sản Phẩm Nổi Bật</h2>
+        <div class="row" id="product-list">
+            <div class="col-md-3 product-item">
+                <div class="card mb-4">
+                    <a href="product-detail.html?name=Giấy Double A a4 70gsm">
+                        <img src="assets/img/paper.jpg" class="card-img-top" alt="Giấy Double A a4 70gsm">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title product-name">Giấy Double A a4 70gsm</h5>
+                        <p class="card-text">73.000đ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="text-center text-white bg-dark p-3">
+        <p>&copy; 2025 Văn Phòng Phẩm. Mọi quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
